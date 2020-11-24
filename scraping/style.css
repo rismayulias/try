@@ -1,0 +1,11 @@
+.card{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-item{
+  width: 25%;
+}
+img{
+  height: auto;
+max-width: 100%;
+}

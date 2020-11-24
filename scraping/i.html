@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Request JSON Test</title>
+  </head>
+  <body>
+    <a href="#" id="get-data">Get JSON data</a>
+    <div id="show-data"></div>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- <script src="example.js"></script> -->
+    <script>
+      $('#get-data').click(function () {
+        var httpReq = new XMLHttpRequest();
+        httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
+    httpReq.setRequestHeader('Content-type', 'application/ecmascript');
+    httpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
+    console.log('ok');
+  $.getJSON('https://shopee.co.id/api/v2/search_items/?by=pop&entry_point=ShopBySearch&limit=30&match_id=11465140&newest=0&order=desc&page_type=shop&version=2', function (data) {
+    console.log(data);
+  });
+});
+
+    </script>
+  </body>
+
+</html>
